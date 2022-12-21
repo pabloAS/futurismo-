@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0 none;
+  font-family: "Chivo Mono", monospace;
+  background: #000;
+  color: #f1f1f1;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+video {
+  display: flex;
+  width: 56%;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 30px;
+  border-right: 4px solid #fff;
+  width: 30ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(20), blinking 0.7s infinite step-end alternate;
+  text-align: center;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+a {
+  height: 50px;
+  background: #5a01c7;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover {
+  transition: 0.3s;
+  background: #410093;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+  video {
+    width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
